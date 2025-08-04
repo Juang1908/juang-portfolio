@@ -45,8 +45,20 @@ export const Hero = () => {
             Creative Developer & Designer
           </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            I’m an experienced IT Coordinator with a strong foundation in
+            infrastructure, networking, and business technology solutions.I lead
+            IT operations across the company—managing Microsoft 365,
+            cybersecurity, domain and DNS configurations, hardware procurement,
+            and networking projects. Alongside my IT work, I’m actively growing
+            my skills in frontend and backend development, focusing on building
+            modern web applications using tools like Next.js, Tailwind CSS, and
+            Framer Motion on the frontend, and exploring backend technologies
+            like Node.js, Docker, and Azure services. My goal is to bridge
+            infrastructure and development—delivering end-to-end solutions that
+            are both functional and visually compelling. Whether it’s optimizing
+            operations, building tech from the ground up, or learning new tools,
+            I’m passionate about solving problems, supporting teams, and growing
+            with the evolving tech landscape.
           </motion.p>
           <motion.div className="cta-buttons" variants={staggerContainer}>
             <motion.a

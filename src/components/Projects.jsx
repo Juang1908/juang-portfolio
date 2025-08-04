@@ -52,11 +52,11 @@ export const Projects = () => {
           <h3>Surveillance System Deployment</h3>
           <p>
             Led the installation of a surveillance system across all key hubs of
-            the country club, including mounting security cameras, running
-            network cables, and connecting devices to centralized monitoring
-            equipment. Also installed companion mobile and desktop apps on
-            authorized devices, enabling staff to securely access live feeds and
-            recorded footage.
+            the company, including mounting security cameras, running network
+            cables, and connecting devices to centralized monitoring equipment.
+            Also installed companion mobile and desktop apps on authorized
+            devices, enabling staff to securely access live feeds and recorded
+            footage.
           </p>
           <div className="project-tech">
             <span>IP Cameras</span>
