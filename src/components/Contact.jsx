@@ -168,8 +168,20 @@ export const Contact = () => {
       transition={{ duration: 0.6 }}
     >
       <motion.h2 variants={fadeInUp} initial="initial" animate="animate">
-        Get in Touch
+        Let&apos;s Connect
       </motion.h2>
+
+      <motion.p
+        className="contact-intro"
+        variants={fadeInUp}
+        initial="initial"
+        animate="animate"
+      >
+        If you&apos;re hiring for an IT support, systems, infrastructure, or
+        technical operations role, I&apos;d be glad to connect. Feel free to
+        reach out about opportunities, projects, or how I can help support your
+        team.
+      </motion.p>
 
       <motion.div className="contact-content" variants={fadeInUp}>
         <motion.form

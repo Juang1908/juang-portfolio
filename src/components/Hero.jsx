@@ -16,6 +16,8 @@ const staggerContainer = {
 }
 
 export const Hero = () => {
+  const resumeUrl = '/Juan-Galvan-Resume.pdf' // replace with your actual resume file path
+
   return (
     <motion.section
       id="home"
@@ -31,34 +33,38 @@ export const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.div className="hero-badge">
-            <span>🤚 Hello, I'm</span>
+          <motion.div className="hero-badge" variants={fadeInUp}>
+            <span>👋 Hello, I&apos;m</span>
           </motion.div>
+
           <motion.h1
             className="glitch"
             variants={fadeInUp}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.03 }}
           >
             Juan Galvan
           </motion.h1>
+
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
-            IT Professional | Infrastructure, Admin & Web Development
+            IT Support | Systems Administration | Infrastructure & Technical
+            Operations
           </motion.h2>
+
           <motion.p className="hero-description" variants={fadeInUp}>
-            I’m an IT Coordinator with hands-on experience supporting
-            infrastructure, networking, cloud platforms, and business technology
-            operations. My work includes Microsoft 365 administration, Entra ID,
-            Intune, Active Directory, hardware and software support, domain and
-            DNS management, cybersecurity practices, and network deployment
-            projects. I also bring experience in document management,
-            operational reporting, budget tracking, and Power BI KPI visibility,
-            helping teams stay organized, secure, and efficient. Alongside my IT
-            background, I’m expanding my skills in frontend and backend
-            development using technologies like Next.js, Tailwind CSS, Framer
-            Motion, Node.js, Docker, and Azure. My goal is to bridge IT
-            operations and development to build practical, modern solutions that
-            improve both systems and user experience.
+            I&apos;m an IT professional with hands-on experience supporting
+            business technology, infrastructure, end users, and operational
+            systems. My background includes Microsoft 365 administration, Entra
+            ID, Intune, Active Directory, hardware deployment, connected
+            devices, troubleshooting, and operational reporting. I help teams
+            stay secure, connected, and efficient while continuing to build
+            modern web development skills.
           </motion.p>
+
+          <motion.p className="hero-availability" variants={fadeInUp}>
+            Open to IT Support, Systems Administration, Desktop Support, and
+            Technical Operations opportunities.
+          </motion.p>
+
           <motion.div className="cta-buttons" variants={staggerContainer}>
             <motion.a
               href="#projects"
@@ -66,8 +72,20 @@ export const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              View MY Work
+              View My Work
             </motion.a>
+
+            <motion.a
+              href="https://drive.google.com/file/d/1O064N_B4BNYww97nR4LHkreR3HtPYEHB/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Download Resume
+            </motion.a>
+
             <motion.a
               href="#contact"
               className="cta-secondary"
@@ -77,18 +95,33 @@ export const Hero = () => {
               Contact Me
             </motion.a>
           </motion.div>
+
           <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a target="_blank" href="https://github.com/Juang1908">
-              <i className="fab fa-github"></i>
-            </motion.a>
             <motion.a
               target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Juang1908"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github"></i>
+            </motion.a>
+
+            <motion.a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/juan-galvan1/"
+              aria-label="LinkedIn"
             >
               <i className="fab fa-linkedin"></i>
             </motion.a>
-            <motion.a target="_blank" href="https://yourresume.com">
-              <i className="far fa-file-excel"></i>
+
+            <motion.a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1O064N_B4BNYww97nR4LHkreR3HtPYEHB/view?usp=sharing"
+              aria-label="Resume"
+            >
+              <i className="far fa-file-alt"></i>
             </motion.a>
           </motion.div>
         </motion.div>
@@ -107,43 +140,42 @@ export const Hero = () => {
                 padding: '2rem',
                 height: '100%',
                 borderRadius: '20px',
-                background: 'rgba(30, 41, 59, 0.8)',
+                background: 'rgba(30, 41, 59, 0.85)',
                 backdropFilter: 'blur(10px)',
                 marginBottom: 50,
               }}
               style={vscDarkPlus}
             >
-              {`const aboutMe: ProfessionalProfile = {
-  codename: "Juan Galvan",
-  origin: "Spring, TX",
-  role: "IT Coordinator // Systems Support // Emerging Full-Stack Developer",
-  stack: {
-    infrastructure: ["Microsoft 365", "Entra ID", "Intune", "Active Directory", "Networking"],
-    operations: ["Document Management", "Power BI", "Operational Reporting", "Budget Tracking"],
-    development: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js"]
-  },
-  traits: [
-    "detail-oriented",
-    "solution-driven",
-    "tech-forward",
-    "always learning"
+              {`const profile = {
+  name: "Juan Galvan",
+  location: "Spring, TX",
+  focus: "IT Support // Systems Administration // Infrastructure",
+  strengths: [
+    "Microsoft 365",
+    "Entra ID",
+    "Intune",
+    "Active Directory",
+    "Networking",
+    "Hardware Support",
+    "Power BI",
+    "Google Workspace"
   ],
-  missionStatement:
-    "Building the bridge between infrastructure, cloud systems, and modern web experiences.",
-  availability: "Available for hire",
+  development: ["JavaScript", "React", "Next.js", "Tailwind CSS"],
+  mindset: ["detail-oriented", "solution-driven", "always learning"],
+  status: "Open to opportunities"
 };`}
             </SyntaxHighlighter>
           </div>
 
           <motion.div
             className="floating-card"
-            animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+            animate={{ y: [0, -10, 0], rotate: [0, 2, 0] }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
           >
             <div className="card-content">
               <span className="card-icon">🧑🏻‍💻</span>
               <span className="card-text">
-                Currently Working on something AWESOME!
+                Building practical IT and web solutions
               </span>
             </div>
           </motion.div>

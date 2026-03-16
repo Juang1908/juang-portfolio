@@ -30,8 +30,20 @@ export const Projects = () => {
         viewport={{ once: true }}
         className="projects-title"
       >
-        My Projects
+        Featured Projects
       </motion.h2>
+
+      <motion.p
+        className="projects-intro"
+        variants={fadeInUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        Selected work that reflects my experience in infrastructure support,
+        systems administration, technical operations, and business technology
+        environments.
+      </motion.p>
 
       <motion.div
         className="project-grid"
@@ -52,17 +64,16 @@ export const Projects = () => {
           />
           <h3>Surveillance System Deployment</h3>
           <p>
-            Led the installation of a surveillance system across all key hubs of
-            the company, including mounting security cameras, running network
-            cables, and connecting devices to centralized monitoring equipment.
-            Also installed companion mobile and desktop apps on authorized
-            devices, enabling staff to securely access live feeds and recorded
-            footage.
+            Supported the deployment of surveillance systems across key business
+            locations by helping install cameras, route network cabling, connect
+            monitoring equipment, and configure secure device access. Also
+            assisted with mobile and desktop viewing setup so authorized staff
+            could monitor live and recorded footage efficiently.
           </p>
           <div className="project-tech">
             <span>IP Cameras</span>
-            <span>Mobile App Setup</span>
-            <span>LAN Cabling</span>
+            <span>Network Cabling</span>
+            <span>Device Setup</span>
             <span>Remote Access</span>
           </div>
         </motion.div>
@@ -77,19 +88,19 @@ export const Projects = () => {
             style={{ backgroundImage: 'url(/projects/SCC1.png)' }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3>Trackman Golf Installation</h3>
+          <h3>Trackman Golf Installation Support</h3>
           <p>
-            Supported the installation of Trackman golf systems at the country
-            club by assisting with hardware setup, routing Ethernet cabling
-            across the golf range, and configuring network connectivity. Ensured
-            devices were correctly powered, connected, and operational for
-            seamless data capture and real-time analysis.
+            Assisted with the installation of Trackman golf technology by
+            supporting hardware setup, Ethernet cabling, connectivity
+            validation, and operational readiness across the range environment.
+            Helped ensure devices were powered, connected, and functioning
+            properly for reliable data capture and user experience.
           </p>
           <div className="project-tech">
             <span>Ethernet Cabling</span>
-            <span>Trackman Hardware</span>
-            <span>Network Configuration</span>
-            <span>Power Distribution</span>
+            <span>Hardware Support</span>
+            <span>Network Connectivity</span>
+            <span>Deployment Support</span>
           </div>
         </motion.div>
 
@@ -103,19 +114,18 @@ export const Projects = () => {
             style={{ backgroundImage: 'url(/projects/clubessemtial.png)' }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3>Club Essential POS</h3>
+          <h3>Clubessential POS Deployment</h3>
           <p>
-            Assisted with setting up Clubessential&apos;s POS system at a
-            private country club, supporting both hardware installation and
-            software configuration across multiple departments. Helped deploy
-            networking equipment, configure static IPs for printers and
-            terminals, and ensured smooth integration with credit card readers
-            and member databases.
+            Supported the rollout of Clubessential POS systems by assisting with
+            hardware installation, printer and terminal connectivity, static IP
+            configuration, and onsite troubleshooting. Helped improve deployment
+            readiness across departments by supporting both technical setup and
+            day-to-day issue resolution.
           </p>
           <div className="project-tech">
-            <span>Windows Server</span>
-            <span>POS Hardware</span>
-            <span>Clubessential</span>
+            <span>POS Systems</span>
+            <span>Static IPs</span>
+            <span>Printer Support</span>
             <span>Networking</span>
           </div>
         </motion.div>
@@ -132,23 +142,17 @@ export const Projects = () => {
           />
           <h3>Microsoft 365 / Entra ID Administration</h3>
           <p>
-            <p>
-              Managed core Microsoft 365 administrative tasks including user
-              account support, password resets, access troubleshooting, and
-              identity and device management workflows. Worked with Entra ID,
-              Intune, and Active Directory to support secure access to company
-              resources, assist with onboarding and offboarding, manage users
-              and devices, apply basic policies, and help maintain a secure and
-              organized enterprise environment.
-            </p>
+            Supported Microsoft 365 administrative tasks including user account
+            assistance, password resets, identity troubleshooting, and
+            device-related workflows. Worked with Entra ID, Intune, and Active
+            Directory to help maintain secure access, organized account
+            management, and reliable day-to-day support.
           </p>
           <div className="project-tech">
             <span>Microsoft 365</span>
             <span>Entra ID</span>
-            <span>User Management</span>
-            <span>Access Control</span>
             <span>Intune</span>
-            <span>AD</span>
+            <span>User Management</span>
           </div>
         </motion.div>
 
@@ -170,11 +174,10 @@ export const Projects = () => {
           />
           <h3>Google Workspace Administration</h3>
           <p>
-            Developed solid knowledge of Google Workspace administration through
-            Google Learning Center training and hands-on study of core
-            administrative workflows. Gained familiarity with user provisioning,
-            permissions management, access controls, and collaboration settings
-            across Gmail, Drive, Calendar, and the Google Admin Console.
+            Built working knowledge of Google Workspace administration through
+            hands-on learning and platform use, including user support,
+            permissions, access controls, and collaboration tools such as Gmail,
+            Drive, Calendar, and the Admin Console.
           </p>
           <div className="project-tech">
             <span>Google Workspace</span>
@@ -183,6 +186,7 @@ export const Projects = () => {
             <span>User Support</span>
           </div>
         </motion.div>
+
         <motion.div
           className="project-card"
           variants={fadeInUp}
@@ -201,13 +205,11 @@ export const Projects = () => {
           />
           <h3>Document Management & Operational Reporting</h3>
           <p>
-            Built document management and operational reporting workflows to
-            improve record organization, data accuracy, and visibility across
-            departments. Supported file standardization, searchable digital
-            archives, tracking logs, and documentation retrieval using tools
-            such as OneDrive and SharePoint, while also contributing to budget
-            tracking and Power BI KPI reporting to support better business
-            decisions.
+            Supported document organization and operational reporting workflows
+            by improving file structure, retrieval processes, and information
+            visibility across teams. Contributed to budget tracking, searchable
+            digital records, and Power BI KPI reporting to help support better
+            operational decisions.
           </p>
           <div className="project-tech">
             <span>Document Management</span>
@@ -215,7 +217,7 @@ export const Projects = () => {
             <span>OneDrive</span>
             <span>SharePoint</span>
             <span>Budget Tracking</span>
-            <span>Operational Reporting</span>
+            <span>Reporting</span>
           </div>
         </motion.div>
       </motion.div>
