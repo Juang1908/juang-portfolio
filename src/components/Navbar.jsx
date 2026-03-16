@@ -21,42 +21,47 @@ export const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
-      <motion.div
-        className="logo"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        Portfolio
-      </motion.div>
+      <div className="navbar-container">
+        <motion.a
+          href="#home"
+          className="logo"
+          whileHover={{ scale: 1.04 }}
+          whileTap={{ scale: 0.97 }}
+        >
+          Juan Galvan
+        </motion.a>
 
-      <motion.ul
-        className="nav-links"
-        variants={staggerContainer}
-        initial="initial"
-        animate="animate"
-      >
-        <motion.li
-          variants={fadeInUp}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
+        <motion.ul
+          className="nav-links"
+          variants={staggerContainer}
+          initial="initial"
+          animate="animate"
         >
-          <a href="#home">Home</a>
-        </motion.li>
-        <motion.li
-          variants={fadeInUp}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <a href="#projects">Projects</a>
-        </motion.li>
-        <motion.li
-          variants={fadeInUp}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <a href="#contact">Contact</a>
-        </motion.li>
-      </motion.ul>
+          <motion.li
+            variants={fadeInUp}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <a href="#home">Home</a>
+          </motion.li>
+
+          <motion.li
+            variants={fadeInUp}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <a href="#projects">Projects</a>
+          </motion.li>
+
+          <motion.li
+            variants={fadeInUp}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <a href="#contact">Contact</a>
+          </motion.li>
+        </motion.ul>
+      </div>
     </motion.nav>
   )
 }

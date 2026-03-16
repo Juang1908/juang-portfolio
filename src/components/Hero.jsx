@@ -42,23 +42,22 @@ export const Hero = () => {
             Juan Galvan
           </motion.h1>
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
-            Creative Developer & Designer
+            IT Professional | Infrastructure, Admin & Web Development
           </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
-            I’m an experienced IT Coordinator with a strong foundation in
-            infrastructure, networking, and business technology solutions.I lead
-            IT operations across the company—managing Microsoft 365,
-            cybersecurity, domain and DNS configurations, hardware procurement,
-            and networking projects. Alongside my IT work, I’m actively growing
-            my skills in frontend and backend development, focusing on building
-            modern web applications using tools like Next.js, Tailwind CSS, and
-            Framer Motion on the frontend, and exploring backend technologies
-            like Node.js, Docker, and Azure services. My goal is to bridge
-            infrastructure and development—delivering end-to-end solutions that
-            are both functional and visually compelling. Whether it’s optimizing
-            operations, building tech from the ground up, or learning new tools,
-            I’m passionate about solving problems, supporting teams, and growing
-            with the evolving tech landscape.
+            I’m an IT Coordinator with hands-on experience supporting
+            infrastructure, networking, cloud platforms, and business technology
+            operations. My work includes Microsoft 365 administration, Entra ID,
+            Intune, Active Directory, hardware and software support, domain and
+            DNS management, cybersecurity practices, and network deployment
+            projects. I also bring experience in document management,
+            operational reporting, budget tracking, and Power BI KPI visibility,
+            helping teams stay organized, secure, and efficient. Alongside my IT
+            background, I’m expanding my skills in frontend and backend
+            development using technologies like Next.js, Tailwind CSS, Framer
+            Motion, Node.js, Docker, and Azure. My goal is to bridge IT
+            operations and development to build practical, modern solutions that
+            improve both systems and user experience.
           </motion.p>
           <motion.div className="cta-buttons" variants={staggerContainer}>
             <motion.a
@@ -114,22 +113,23 @@ export const Hero = () => {
               }}
               style={vscDarkPlus}
             >
-              {`const aboutMe: DeveloperProfile = {
+              {`const aboutMe: ProfessionalProfile = {
   codename: "Juan Galvan",
-  origin: "🌍 ",
-  role: "Fullstack Web Developer",
+  origin: "Spring, TX",
+  role: "IT Coordinator // Systems Support // Emerging Full-Stack Developer",
   stack: {
-    languages: ["JavaScript", "TypeScript", "SQL"],
-    frameworks: ["React", "Next.js", "TailwindCSS", "Supabase"],
+    infrastructure: ["Microsoft 365", "Entra ID", "Intune", "Active Directory", "Networking"],
+    operations: ["Document Management", "Power BI", "Operational Reporting", "Budget Tracking"],
+    development: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Node.js"]
   },
   traits: [
-    "pixel-perfectionist",
-    "API whisperer",
-    "dark mode advocate",
-    "terminal aesthetic enthusiast",
+    "detail-oriented",
+    "solution-driven",
+    "tech-forward",
+    "always learning"
   ],
   missionStatement:
-    "Turning ideas into interfaces and bugs into feature",
+    "Building the bridge between infrastructure, cloud systems, and modern web experiences.",
   availability: "Available for hire",
 };`}
             </SyntaxHighlighter>
