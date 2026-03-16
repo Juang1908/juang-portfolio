@@ -16,7 +16,8 @@ const staggerContainer = {
 }
 
 export const Hero = () => {
-  const resumeUrl = '/Juan-Galvan-Resume.pdf' // replace with your actual resume file path
+  const resumeUrl =
+    'https://drive.google.com/file/d/1O064N_B4BNYww97nR4LHkreR3HtPYEHB/view?usp=sharing' // replace with your actual resume file path
 
   return (
     <motion.section

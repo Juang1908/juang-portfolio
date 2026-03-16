@@ -21,47 +21,36 @@ export const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
-      <div className="navbar-container">
-        <motion.a
-          href="#home"
-          className="logo"
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          Juan Galvan
-        </motion.a>
+      <motion.div className="logo">Juan Galvan</motion.div>
 
-        <motion.ul
-          className="nav-links"
-          variants={staggerContainer}
-          initial="initial"
-          animate="animate"
-        >
-          <motion.li
-            variants={fadeInUp}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            <a href="#home">Home</a>
-          </motion.li>
+      <motion.ul
+        className="nav-links"
+        variants={staggerContainer}
+        initial="initial"
+        animate="animate"
+      >
+        <motion.li variants={fadeInUp}>
+          <a href="#home">Home</a>
+        </motion.li>
 
-          <motion.li
-            variants={fadeInUp}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            <a href="#projects">Projects</a>
-          </motion.li>
+        <motion.li variants={fadeInUp}>
+          <a href="#projects">Projects</a>
+        </motion.li>
 
-          <motion.li
-            variants={fadeInUp}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.97 }}
+        <motion.li variants={fadeInUp}>
+          <a
+            href="https://drive.google.com/file/d/1O064N_B4BNYww97nR4LHkreR3HtPYEHB/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <a href="#contact">Contact</a>
-          </motion.li>
-        </motion.ul>
-      </div>
+            Resume
+          </a>
+        </motion.li>
+
+        <motion.li variants={fadeInUp}>
+          <a href="#contact">Contact</a>
+        </motion.li>
+      </motion.ul>
     </motion.nav>
   )
 }

@@ -1,6 +1,7 @@
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
+import { Skills } from './components/Skills'
 import { Projects } from './components/Projects'
 import { AIChat } from './components/AIChat'
 import { Contact } from './components/Contact'
@@ -21,6 +22,7 @@ function App() {
     <div className={`app ${isLoaded ? 'loaded' : ''}`}>
       <Navbar />
       <Hero />
+      <Skills />
       <Projects />
       <AIChat />
       <Contact />
