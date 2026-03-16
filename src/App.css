@@ -73,10 +73,10 @@ body {
   border-bottom: 1px solid var(--card-border);
 }
 
-.logo {
+.Logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var([[--text-color]]);
+  color: var(--text-color);
   text-shadow: 0 0 10px rgba(244, 114, 182, 0.3);
 }
 
@@ -84,6 +84,39 @@ body {
   display: flex;
   gap: 2rem;
   list-style: none;
+}
+.input-error {
+  border: 1px solid #ff6b6b !important;
+  box-shadow: 0 0 0 1px rgba(255, 107, 107, 0.15);
+}
+
+.error-text {
+  color: #ff8a8a;
+  font-size: 0.9rem;
+  margin: 8px 0 14px;
+}
+
+.btn-loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-links a {
