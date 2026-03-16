@@ -29,13 +29,14 @@ export const Contact = () => {
     message: '',
   })
 
-  const handleInpoutChange = (e) => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }))
   }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -47,15 +48,24 @@ export const Contact = () => {
     })
 
     try {
-      await emailjs.send(
+      console.log('SERVICE_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID)
+      console.log('TEMPLATE_ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID)
+      console.log('PUBLIC_KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
+
+      const result = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
+        },
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
         }
       )
+
+      console.log('Email sent:', result)
 
       setFormStatus({
         submitting: false,
@@ -70,6 +80,10 @@ export const Contact = () => {
         message: '',
       })
     } catch (error) {
+      console.error('EmailJS error:', error)
+      console.error('status:', error?.status)
+      console.error('text:', error?.text)
+
       setFormStatus({
         submitting: false,
         success: false,
@@ -104,7 +118,7 @@ export const Contact = () => {
             placeholder="Your Name..."
             required
             whileFocus={{ scale: 1.02 }}
-            onChange={handleInpoutChange}
+            onChange={handleInputChange}
             value={formData.name}
           />
           <motion.input
@@ -113,7 +127,7 @@ export const Contact = () => {
             placeholder="Your Email..."
             required
             whileFocus={{ scale: 1.02 }}
-            onChange={handleInpoutChange}
+            onChange={handleInputChange}
             value={formData.email}
           />
           <motion.textarea
@@ -121,7 +135,7 @@ export const Contact = () => {
             placeholder="Your Message..."
             required
             whileFocus={{ scale: 1.02 }}
-            onChange={handleInpoutChange}
+            onChange={handleInputChange}
             value={formData.message}
           />
           <motion.button
